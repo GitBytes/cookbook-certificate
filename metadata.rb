@@ -6,11 +6,7 @@ description 'Installs/Configures certificates, private keys, CA root bundles fro
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 source_url 'https://github.com/atomic-penguin/cookbook-certificate.git'
 issues_url 'https://github.com/atomic-penguin/cookbook-certificate/issues'
-begin
-  version IO.read(File.join(File.dirname(__FILE__), 'VERSION'))
-rescue
-  '0.0.1'
-end
+version '2.0.0'
 
 depends 'chef-vault', '~> 2.0'
 
